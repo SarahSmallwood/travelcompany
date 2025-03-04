@@ -1,13 +1,14 @@
-import react from 'react';
-
+import React from 'react';
+import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 import './App.css';
+import ImageCarousel from './components/ImageCarousel';
 
 function App() {
   return (
     <div className="App">
       <div className="container">
     <header className="header">
-      <h1 className="title">TravelCo</h1>
+      <h1 className="title">Above and Abroad Travel</h1>
       <nav>
         <ul className="nav-list">
           <li><a href="#" className="nav-link">Home</a></li>
@@ -20,12 +21,26 @@ function App() {
 
     <main className="main">
       <h2 className="headline">Explore the World with Us</h2>
+      <ImageCarousel/>
       <p className="description">Discover breathtaking destinations and unique experiences tailored just for you.</p>
       <button className="cta-button">Get Started</button>
     </main>
 
     <footer className="footer">
-      &copy; {new Date().getFullYear()} TravelCo. All rights reserved.
+      <p>&copy; {new Date().getFullYear()} Above and Abroad Travel. All rights reserved.</p>
+      <div className="social-icons">
+          <a href="#" className="social-icon" aria-label="Facebook">
+            <FaFacebookF />
+          </a>
+          <a href="#" className="social-icon" aria-label="Instagram">
+            <FaInstagram />
+          </a>
+          <a href="#" className="social-icon" aria-label="Twitter">
+            <FaTwitter />
+          </a>
+        </div>
+
+      
     </footer>
   </div>
       
