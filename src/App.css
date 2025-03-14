@@ -1,7 +1,28 @@
 body, html {
   margin: 0;
-  padding: 0;
+  padding-top: 20px;
   font-family: 'Montserrat', sans-serif;
+}
+.top-bar {
+  background-color: whitesmoke;
+  height: 25px;
+  display: flex;
+  justify-content: left;
+  float: left;
+  color: rgb(5, 5, 5);
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.phone-icon {
+  display: flex;
+  justify-content: left;
+  float: left;
 }
 
 .container {
@@ -15,6 +36,7 @@ body, html {
 }
 
 .header {
+  height: 60px;
   width: 100%;
   padding: 1.25rem;
   display: flex;
@@ -65,8 +87,9 @@ body, html {
 .description {
   font-size: 1.225rem;
   margin-bottom: 1.5rem;
-  max-width: 40rem;
+  /*max-width: 40rem;*/
   font-family: Montserrat;
+  text-align: center;
 }
 
 .cta-button {
